@@ -10,24 +10,29 @@ import {
     List
 } from '@mui/material'
 import { IoMdHome, IoIosInformationCircleOutline, IoIosCall, IoIosContacts } from "react-icons/io";
-import Logo from './Icons/squab-2.png'
+import FlagArg from '../Assets/FlagArg.jsx';
+import FlagUsa from '../Assets/FlagUSA.jsx'
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false)
     const menuOptions = [
         {
+            link: "/#",
             text: "Home",
             icon: <IoMdHome />
         },
         {
+            link: "/#nosotros",
             text: "Nosotros",
             icon: <IoIosInformationCircleOutline />
         },
         {
+            link: "/#contacto",
             text: "Contacto",
             icon: <IoIosCall />
         },
         {
+            link: "/#",
             text: "Súmate al equipo",
             icon: <IoIosContacts />
         }
@@ -35,13 +40,15 @@ const Navbar = () => {
     return (
         <nav>
             <div className='nav-logo-container'>
-                <img src={Logo} alt='' />
+                <h1 className='home-custom-logo'>sq<span className='custom-logo-underline'>u</span>ab</h1>
             </div>
             <div className='navbar-links-container' >
-                <a href=''>Home</a>
-                <a href=''>Nosotros</a>
-                <a href=''>Contacto</a>
+                <a href='/#'>Home</a>
+                <a href='/#nosotros'>Nosotros</a>
+                <a href='/#contacto'>Contacto</a>
                 <a href=''>Súmate al equipo</a>
+                <a href=''><FlagArg /></a>
+                <a href=''><FlagUsa /></a>
             </div>
             <div className='navbar-menu-container'>
                 <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
@@ -58,7 +65,7 @@ const Navbar = () => {
                             <ListItem key={item.text} disablePadding>
                                 <ListItemButton>
                                     <ListItemIcon>{item.icon}</ListItemIcon>
-                                    <ListItemText>{item.text}</ListItemText>
+                                    <ListItemText><a href={item.link} style={{textDecoration: 'None', color: 'black'}}>{item.text}</a></ListItemText>
                                 </ListItemButton>
                             </ListItem>
                         ))}
