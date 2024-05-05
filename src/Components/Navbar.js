@@ -48,9 +48,9 @@ const Navbar = () => {
                 <a href='/#'>Home</a>
                 <a href='/#nosotros'>Nosotros</a>
                 <a href='/#contacto'>Contacto</a>
-                <a href=''>Súmate al equipo</a>
-                <a href=''><FlagArg /></a>
-                <a href=''><FlagUsa /></a>
+                <a href='/#'>Súmate al equipo</a>
+                <a href='/#'><FlagArg /></a>
+                <a href='/#'><FlagUsa /></a>
             </div>
             <div className='navbar-menu-container'>
                 <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
