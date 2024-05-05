@@ -1,7 +1,6 @@
 import React from 'react'
 import Formulario from './Formulario'
 import { FaCalendarAlt } from "react-icons/fa"
-import { BiUnderline } from 'react-icons/bi'
 
 const Contacto = () => {
     return (
