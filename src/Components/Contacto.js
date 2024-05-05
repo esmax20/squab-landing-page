@@ -1,6 +1,7 @@
 import React from 'react'
 import Formulario from './Formulario'
 import { FaCalendarAlt } from "react-icons/fa"
+import { BiUnderline } from 'react-icons/bi'
 
 const Contacto = () => {
     return (
@@ -14,12 +15,10 @@ const Contacto = () => {
             </div>
             <div className="nosotros-section-bottom">
                 <div className="contact-section-info">
-                    <div className="info-boxes-img-container">
-                        <span><FaCalendarAlt className="card-icon" /></span>
-                    </div>
+                    <span style={{margin: '0 10px'}}><FaCalendarAlt className="card-icon" /></span>
                     <div >
-                        <p className='secondary-heading'>Estas a un mensaje de encontrar las herramientas que te permitan escalar al siguiente nivel! 🚀</p>
-                        <h1 className='secondary-heading'>Agendá una reunión directamente aquí</h1>
+                        <p style={{ margin: '20px 0 30px' }} className='secondary-heading'>Estas a un mensaje de encontrar las herramientas que te permitan escalar al siguiente nivel! 🚀</p>
+                        <h1 className='secondary-heading'>Agendá una reunión directamente <a href='/#contacto' style={{ textDecoration: 'underline', color: '#24796B' }}>aquí</a></h1>
                     </div>
                 </div>
             </div>

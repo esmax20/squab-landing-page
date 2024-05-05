@@ -6,16 +6,18 @@ import Footer from './Components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-      <section id={'nosotros'}>
-        <Nosotros />
-      </section>
-      <section id={'contacto'}>
-        <Contacto />
-      </section>
+    <>
+      <div className="App">
+        <Home />
+        <section id={'nosotros'}>
+          <Nosotros />
+        </section>
+        <section id={'contacto'}>
+          <Contacto />
+        </section>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 

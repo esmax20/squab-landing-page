@@ -45,13 +45,13 @@ const Nosotros = () => {
                 </div>
             </div>
             <h2 className="secondary-heading">
-                Nuestras especialidades
+                Nuestras especialidades:
             </h2>
             <div className="nosotros-section-bottom">
                 {especialidadesData.map((data) => (
                     <div className="nosotros-section-info" key={data.title}>
                         <span>{data.image}</span>
-                        <h2>{data.title}</h2>
+                        <h3>{data.title}</h3>
                     </div>
                 ))}
             </div>

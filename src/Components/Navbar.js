@@ -12,6 +12,7 @@ import {
 import { IoMdHome, IoIosInformationCircleOutline, IoIosCall, IoIosContacts } from "react-icons/io";
 import FlagArg from '../Assets/FlagArg.jsx';
 import FlagUsa from '../Assets/FlagUSA.jsx'
+import Logo from '../Assets/Logo'
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false)
@@ -40,7 +41,8 @@ const Navbar = () => {
     return (
         <nav>
             <div className='nav-logo-container'>
-                <h1 className='home-custom-logo'>sq<span className='custom-logo-underline'>u</span>ab</h1>
+                {/* <h1 className='home-custom-logo'>sq<span className='custom-logo-underline'>u</span>ab</h1> */}
+                <Logo />
             </div>
             <div className='navbar-links-container' >
                 <a href='/#'>Home</a>
