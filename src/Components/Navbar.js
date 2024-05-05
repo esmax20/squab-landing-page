@@ -33,7 +33,7 @@ const Navbar = () => {
             icon: <IoIosCall />
         },
         {
-            link: "/#",
+            link: "/#sumate",
             text: "Súmate al equipo",
             icon: <IoIosContacts />
         }
@@ -48,7 +48,7 @@ const Navbar = () => {
                 <a href='/#'>Home</a>
                 <a href='/#nosotros'>Nosotros</a>
                 <a href='/#contacto'>Contacto</a>
-                <a href='/#'>Súmate al equipo</a>
+                <a href='/#sumate'>Súmate al equipo</a>
                 <a href='/#'><FlagArg /></a>
                 <a href='/#'><FlagUsa /></a>
             </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import Formulario from './Formulario'
 import { FaCalendarAlt } from "react-icons/fa"
 
 const Contacto = () => {
@@ -17,11 +16,10 @@ const Contacto = () => {
                     <span style={{margin: '0 10px'}}><FaCalendarAlt className="card-icon" /></span>
                     <div >
                         <p style={{ margin: '20px 0 30px' }} className='secondary-heading'>Estas a un mensaje de encontrar las herramientas que te permitan escalar al siguiente nivel! 🚀</p>
-                        <h1 className='secondary-heading'>Agendá una reunión directamente <a href='/#contacto' style={{ textDecoration: 'underline', color: '#24796B' }}>aquí</a></h1>
+                        <h1 className='secondary-heading'>Agendá una reunión directamente <a href='/#sumate' style={{ textDecoration: 'underline', color: '#24796B' }}>aquí</a></h1>
                     </div>
                 </div>
-            </div>
-            <Formulario />
+            </div>            
         </div>
     )
 }

@@ -3,6 +3,7 @@ import Home from './Components/Home';
 import Nosotros from './Components/Nosotros';
 import Contacto from './Components/Contacto';
 import Footer from './Components/Footer';
+import Formulario from './Components/Formulario';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
         </section>
         <section id={'contacto'}>
           <Contacto />
+        </section>
+        <section id={'sumate'}>
+          <Formulario />
         </section>
       </div>
       <Footer />
