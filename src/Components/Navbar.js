@@ -50,7 +50,6 @@ const Navbar = () => {
     return (
         <nav>
             <div className='nav-logo-container'>
-                {/* <h1 className='home-custom-logo'>sq<span className='custom-logo-underline'>u</span>ab</h1> */}
                 <Logo />
             </div>
             <div className='navbar-links-container' >
