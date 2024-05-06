@@ -1,7 +1,10 @@
 import React from 'react'
 import { FaApple, FaAndroid, FaChrome, FaCog, FaDesktop, FaPenFancy, FaUserTie } from "react-icons/fa"
+import { useTranslation } from 'react-i18next'
 
 const Nosotros = () => {
+    const { t } = useTranslation();
+
     const especialidadesData = [
         {
             image: <FaApple className="card-icon" />,
@@ -13,23 +16,23 @@ const Nosotros = () => {
         },
         {
             image: <FaChrome className="card-icon" />,
-            title: "Sistemas web",
+            title: t('sistWeb'),
         },
         {
             image: <FaCog className="card-icon" />,
-            title: "Software a medida",
+            title: t('softMed'),
         },
         {
             image: <FaDesktop className="card-icon" />,
-            title: "App de escritorio",
+            title: t('appDesktop'),
         },
         {
             image: <FaPenFancy className="card-icon" />,
-            title: "Diseño web",
+            title: t('webDesign'),
         },
         {
             image: <FaUserTie className="card-icon" />,
-            title: "Consultoría y Asesoría",
+            title: t('consult'),
         }
     ]
     return (
@@ -37,15 +40,15 @@ const Nosotros = () => {
             <div className="about-section-container">
                 <div className="about-section-text-container">
                     <h1 className="primary-heading">
-                        Nosotros
+                        {t('nosotros')}
                     </h1>
                     <p className="primary-text">
-                        En Squab, nos impulsa el avance constante. No nos limitamos a identificar problemas; nos destacamos por crear soluciones informáticas integrales que impulsarán tu éxito. Ya sea desarrollando aplicaciones móviles de vanguardia o diseñando software a medida, nuestro enfoque se centra en satisfacer tus necesidades específicas con precisión y eficacia. En Squab, nos comprometemos no solo a mantener el ritmo, sino a liderar la vanguardia de la innovación tecnológica.
+                        {t('nosotrosDesc')}
                     </p>
                 </div>
             </div>
             <h2 className="secondary-heading">
-                Nuestras especialidades:
+                {t('nosotrosSpec')}
             </h2>
             <div className="nosotros-section-bottom">
                 {especialidadesData.map((data) => (

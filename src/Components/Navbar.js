@@ -13,9 +13,17 @@ import { IoMdHome, IoIosInformationCircleOutline, IoIosCall, IoIosContacts } fro
 import FlagArg from '../Assets/FlagArg.jsx';
 import FlagUsa from '../Assets/FlagUSA.jsx'
 import Logo from '../Assets/Logo'
+import { useTranslation } from 'react-i18next'
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false)
+    const { t, i18n } = useTranslation();
+
+    const handleTrans = (code) => {
+        console.log(code)
+        i18n.changeLanguage(code);
+    };
+
     const menuOptions = [
         {
             link: "/#",
@@ -24,20 +32,21 @@ const Navbar = () => {
         },
         {
             link: "/#nosotros",
-            text: "Nosotros",
+            text: t('nosotros'),
             icon: <IoIosInformationCircleOutline />
         },
         {
             link: "/#contacto",
-            text: "Contacto",
+            text: t("contacto"),
             icon: <IoIosCall />
         },
         {
             link: "/#sumate",
-            text: "Súmate al equipo",
+            text: t('sumate'),
             icon: <IoIosContacts />
-        }
+        },
     ]
+
     return (
         <nav>
             <div className='nav-logo-container'>
@@ -46,11 +55,11 @@ const Navbar = () => {
             </div>
             <div className='navbar-links-container' >
                 <a href='/#'>Home</a>
-                <a href='/#nosotros'>Nosotros</a>
-                <a href='/#contacto'>Contacto</a>
-                <a href='/#sumate'>Súmate al equipo</a>
-                <a href='/#'><FlagArg /></a>
-                <a href='/#'><FlagUsa /></a>
+                <a href='/#nosotros'>{t('nosotros')}</a>
+                <a href='/#contacto'>{t('contacto')}</a>
+                <a href='/#sumate'>{t('sumate')}</a>
+                <button className='navbar-translate-buttons' onClick={() => handleTrans('es')}><FlagArg /></button>
+                <button className='navbar-translate-buttons' onClick={() => handleTrans('en')}><FlagUsa /></button>
             </div>
             <div className='navbar-menu-container'>
                 <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
@@ -67,10 +76,26 @@ const Navbar = () => {
                             <ListItem key={item.text} disablePadding>
                                 <ListItemButton>
                                     <ListItemIcon>{item.icon}</ListItemIcon>
-                                    <ListItemText><a href={item.link} style={{textDecoration: 'None', color: 'black'}}>{item.text}</a></ListItemText>
+                                    <ListItemText><a href={item.link} style={{ textDecoration: 'None', color: 'black' }}>{item.text}</a></ListItemText>
                                 </ListItemButton>
                             </ListItem>
                         ))}
+                        <ListItem key='translate-buttons' disablePadding>
+                            <ListItemButton>
+                                <ListItemIcon>
+                                    <button className='navbar-translate-buttons' onClick={() => handleTrans('es')}>
+                                        <FlagArg />
+                                    </button>
+                                </ListItemIcon>
+                            </ListItemButton>
+                            <ListItemButton>
+                                <ListItemIcon>
+                                    <button className='navbar-translate-buttons' style={{ border: 0 }} onClick={() => handleTrans('en')}>
+                                        <FlagUsa />
+                                    </button>
+                                </ListItemIcon>
+                            </ListItemButton>
+                        </ListItem>
                     </List>
                 </Box>
             </Drawer>

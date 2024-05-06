@@ -45,17 +45,21 @@ nav {
   font-weight: bold;
 }
 
-
-
 .navbar-cart-icon {
   font-size: 1.15rem;
 }
 
-
-
 .navbar-menu-container svg {
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.navbar-translate-buttons{
+  border: none;
+  background-color: none;
+  margin-right: 1rem;
+  cursor: pointer;
+  outline: none;
 }
 
 .home-banner-container {

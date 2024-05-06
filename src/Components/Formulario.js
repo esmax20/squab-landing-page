@@ -1,29 +1,32 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Formulario = () => {
+    const { t } = useTranslation()
+
     return (
         <form className="form-page-wrapper">
             <p className="primary-text">
-                Te invitamos a completar el formulario para compartir tus consultas o comentarios con nosotros. Estamos aquí para ayudarte.
+                {t('contactForm')}
             </p>
             <div className='form-section-bottom'>
                 <div className='form-section-info'>
-                    <input className='form-input' type="text" placeholder="Nombre:" />
+                    <input className='form-input' type="text" placeholder={t('nombre')} />
                 </div>
                 <div className='form-section-info'>
-                    <input className='form-input' type="text" placeholder="Apellido:" />
+                    <input className='form-input' type="text" placeholder={t('apellido')} />
                 </div>
                 <div className='form-section-info'>
-                    <input className='form-input' type="text" placeholder="E-mail:" /></div>
+                    <input className='form-input' type="text" placeholder={t('email')} /></div>
                 <div className='form-section-info'>
-                    <input className='form-input' type="text" placeholder="Teléfono:" /></div>
+                    <input className='form-input' type="text" placeholder={t('telef')} /></div>
                 <div className='form-section-info'>
-                    <input className='form-input' type="text" placeholder="País:" /></div>
+                    <input className='form-input' type="text" placeholder={t('pais')} /></div>
                 <div style={{width: '88%', height: '200px'}}>
-                    <textarea className='form-input-comentario' type="text" placeholder="Comentario:" /></div>
+                    <textarea className='form-input-comentario' type="text" placeholder={t('comment')} /></div>
                 <div className='form-section-info'>
-                    <input className='form-input' type="text" placeholder="Ingrese el código de la imagen:" /></div>
-                <button className="primary-button">Enviar</button>
+                    <input className='form-input' type="text" placeholder={t('codigoImg')} /></div>
+                <button className="primary-button">{t('enviar')}</button>
             </div>
 
         </form>
