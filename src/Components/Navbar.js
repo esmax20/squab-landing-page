@@ -7,7 +7,8 @@ import {
     ListItemButton,
     ListItemIcon,
     ListItemText,
-    List
+    List,
+    Button
 } from '@mui/material'
 import { IoMdHome, IoIosInformationCircleOutline, IoIosCall, IoIosContacts } from "react-icons/io";
 import FlagArg from '../Assets/FlagArg.jsx';
@@ -57,9 +58,14 @@ const Navbar = () => {
                 <a href='/#nosotros'>{t('nosotros')}</a>
                 <a href='/#contacto'>{t('contacto')}</a>
                 <a href='/#sumate'>{t('sumate')}</a>
-                <button className='navbar-translate-buttons' onClick={() => handleTrans('es')}><FlagArg /></button>
-                <button className='navbar-translate-buttons' onClick={() => handleTrans('en')}><FlagUsa /></button>
+                <Button className='navbar-translate-buttons' onClick={() => handleTrans('es')}>
+                    <FlagArg />
+                </Button>
+                <Button className='navbar-translate-buttons' onClick={() => handleTrans('en')}>
+                    <FlagUsa />
+                </Button>
             </div>
+
             <div className='navbar-menu-container'>
                 <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
             </div>

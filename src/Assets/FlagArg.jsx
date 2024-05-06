@@ -2,7 +2,7 @@ import React from 'react'
 
 const FlagArg = () => {
     return (
-        <svg width='36' height='26' viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"
+        <svg width='30' height='30' viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"
             xmlnsXxlink="http://www.w3.org/1999/xlink"
             aria-hidden="true" role="img"
             class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet">

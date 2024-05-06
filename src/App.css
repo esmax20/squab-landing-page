@@ -31,7 +31,6 @@ nav {
   justify-content: space-between;
   min-height: 90px;
   align-items: center;
-  flex-direction: row;
 }
 
 .navbar-menu-container {

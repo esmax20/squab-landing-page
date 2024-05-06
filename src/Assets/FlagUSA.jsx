@@ -2,7 +2,7 @@ import React from 'react'
 
 const FlagUSA = () => {
     return (
-        <svg width='36' height='26' viewBox="0 -4 28 28" fill="none"
+        <svg width='30' height='30' viewBox="0 -4 28 28" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_503_3486)">
                 <rect width="28" height="20" rx="2" fill="white" />
