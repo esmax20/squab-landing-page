@@ -28,7 +28,7 @@ i18n
                     consult: "Consultoría y Asesoría",
                     contactDesc: "Estas a un mensaje de encontrar las herramientas que te permitan escalar al siguiente nivel! 🚀",
                     contactSchedule: "Agendá una reunión directamente ",
-                    constactSchedule2: "aquí",
+                    contactSchedule2: "aquí",
                     contactForm: "Te invitamos a completar el formulario para compartir tus consultas o comentarios con nosotros. Estamos aquí para ayudarte.",
                     nombre: "Nombre:",
                     apellido: "Apellido:",
